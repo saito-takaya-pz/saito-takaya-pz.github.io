@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Button Example</title>
+</head>
+<body>
+<button type="button" id="sample-button">
+    Sample Button
+</button>
+<p id="button-click-result"></p>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        let count = 0;
+        $('#sample-button').click(function () {
+            count += 1;
+            $('#button-click-result').text(`button has been clicked ${count} times.`);
+        });
+    });
+</script>
+</body>
+</html>
